@@ -11,9 +11,14 @@ URL指定で追加：
 　Leaflet JS: https://unpkg.com/leaflet@1.9.4/dist/leaflet.js
 　Leaflet CSS: https://unpkg.com/leaflet@1.9.4/dist/leaflet.css
 
-その他の注意点は以下です。
-・緯度のフィールドコードは latitude とする（kintoneアプリも同様)
-・経度のフィールドコードは longitude とする(kintoneアプリも同様)
-それ以外の注意点は特にありません。
+必ず以下の点は注意してください。
+・緯度（数値フィールド）のフィールドコードは latitude とする（kintoneアプリも同様)
+・経度（数値フィールド）のフィールドコードは longitude とする(kintoneアプリも同様)
 
-まずシンプルな状態でkintoneアプリとフォームブリッジの連携を行い、業務要件に従って必要なフィールドを追加してください。
+その他に、以下も注意してください。
+・kintoneアプリの数値フィールドは、デフォルト小数点以下4桁までしか表示されません。設定 ＞ 高度な設定 から緯度経度は6桁表示にするのがよいです。
+
+まずシンプルな状態でkintoneアプリとフォームブリッジの設定を行い、動作確認ができたら業務要件に従って必要なフィールドを追加してください。
+
+なお、もう少し詳細な解説をnoteで行っていますのでご参照ください。
+https://note.com/tetopettenson/n/n5152ace1e0d0?sub_rt=share_pb
