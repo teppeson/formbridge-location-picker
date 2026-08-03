@@ -1,0 +1,10 @@
+* text=auto eol=lf
+
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.csv text eol=crlf
+
+# Existing public v13 artifact. Keep byte-level line-ending compatibility.
+formbridge-location-picker.js text eol=crlf
+
+# CP932 / Shift_JIS files must be explicit path-level exceptions.

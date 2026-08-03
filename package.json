@@ -1,0 +1,23 @@
+{
+  "name": "formbridge-location-picker-development",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Development tooling for FormBridge Location Picker v13",
+  "type": "module",
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "test": "node --test",
+    "check": "npm run lint && npm test"
+  },
+  "engines": {
+    "node": ">=24 <25",
+    "npm": ">=11 <12"
+  },
+  "packageManager": "npm@11.16.0",
+  "devDependencies": {
+    "@eslint/js": "10.0.1",
+    "eslint": "10.8.0",
+    "globals": "17.9.0"
+  }
+}
