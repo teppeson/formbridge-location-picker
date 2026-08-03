@@ -38,16 +38,16 @@
 | 2.1 | 8/4 | Node開発環境 | package.jsonと固定された実行コマンド | done |
 | 2.2 | 8/4 | lint導入 | npm run lintが成功 | done |
 | 2.3 | 8/4 | v13特性テスト | 主要互換挙動の自動テストが成功 | done |
-| 2.4 | 8/4 | CI導入 | Pull Requestでlintとtestが自動実行 | in_progress |
+| 2.4 | 8/4 | CI導入 | Pull Requestでlintとtestが自動実行 | done |
 | 2.5 | 8/4 | 開発・Release手順 | CONTRIBUTING、確認表、rollback手順 | done |
-| 2.6 | 8/4 | Humanレビュー | 差分、CI、実環境確認、公開可否を確認 | planned |
+| 2.6 | 8/4 | Humanレビュー | 差分、CI、実環境確認、公開可否を確認 | in_progress |
 
 ## フェーズ
 
 | フェーズ | 目的 | 主な成果物 | 状態 |
 | --- | --- | --- | --- |
 | Phase 0 | 現状保全とPJ化 | PJ文書、v13基準、互換性仕様 | done |
-| Phase 1 | 開発安全網 | lint、テスト、CI | in_progress |
+| Phase 1 | 開発安全網 | lint、テスト、CI | done |
 | Phase 2 | 公開運用確立 | ライセンス、CONTRIBUTING、Release手順 | done |
 | Phase 3 | 互換性を保った改善 | エラー処理、設定整理、小規模機能拡張 | planned |
 
@@ -56,14 +56,14 @@
 | 期限 | マイルストーン | 判定条件 | 状態 |
 | --- | --- | --- | --- |
 | 2026-08-03 | M1 PJ033立ち上げ | 1.1〜1.8完了 | done |
-| 2026-08-04 | M2 エージェント開発基盤 | 2.1〜2.5完了、Humanレビュー可能 | in_progress |
+| 2026-08-04 | M2 エージェント開発基盤 | 2.1〜2.5完了、Humanレビュー可能 | done |
 | Human承認後 | M3 初回基盤PR | 機能変更なし、CI成功、実環境確認済み | planned |
 
 ## 方針とのズレ確認
 
 - 直近確認日: 2026-08-03
-- 確認結果: MIT Licenseと第三者条件を整備し、v13本体を変更せずNode 24 LTS、固定依存、ESLint、Node標準テストによる開発安全網を追加した。既存v13の保全を優先しており方針と一致。
-- 調整が必要な点: 実FormBridge確認とremote CIは初回Pull Requestの公開前後にMaintainerが実施する。
+- 確認結果: MIT Licenseと第三者条件を整備し、v13本体を変更せずNode 24 LTS、固定依存、ESLint、Node標準テストによる開発安全網を追加した。Pull Request #3でremote CI成功も確認しており、既存v13の保全を優先する方針と一致。
+- 調整が必要な点: 実FormBridge環境での確認をMaintainerが実施する。
 
 ## 未決事項
 
