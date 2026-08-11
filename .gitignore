@@ -1,0 +1,26 @@
+# OS / Editor
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Node.js development tooling
+node_modules/
+coverage/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+
+# Secrets
+.env
+secrets/
+*.key
+*.pem
+
+# Temporary and generated files
+*.log
+*.tmp
+*.bak
+*.zip
+*.7z

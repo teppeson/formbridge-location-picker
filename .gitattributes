@@ -1,0 +1,10 @@
+* text=auto eol=lf
+
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.csv text eol=crlf
+
+# Normalize the Windows working tree copy to CRLF; repository blobs remain LF.
+formbridge-location-picker.js text eol=crlf
+
+# CP932 / Shift_JIS files must be explicit path-level exceptions.
