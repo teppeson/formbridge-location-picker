@@ -50,6 +50,7 @@
 - 現行v13の既定動作を変更する場合は、事前に互換性評価と移行方法を提示します。
 - Codexが調査、実装、テスト、Pull Requestの準備を主導し、公開・マージ・ReleaseはHumanが承認します。
 - 現在は開発基盤の移行期間です。v13本体の挙動変更はまだ行っていません。
+- 2026年8月9日、公開手順どおりに新規作成したkintoneアプリとFormBridgeフォームで、v13標準構成の動作を確認しました。
 
 開発計画と現在地は [docs/ROADMAP.md](docs/ROADMAP.md)、現行仕様の基準は
 [docs/BASELINE_V13.md](docs/BASELINE_V13.md) を参照してください。

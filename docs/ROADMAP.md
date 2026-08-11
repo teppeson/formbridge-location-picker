@@ -61,13 +61,12 @@
 
 ## 方針とのズレ確認
 
-- 直近確認日: 2026-08-03
-- 確認結果: MIT Licenseと第三者条件を整備し、v13本体を変更せずNode 24 LTS、固定依存、ESLint、Node標準テストによる開発安全網を追加した。Pull Request #3でremote CI成功も確認しており、既存v13の保全を優先する方針と一致。
-- 調整が必要な点: 実FormBridge環境での確認をMaintainerが実施する。
+- 直近確認日: 2026-08-11
+- 確認結果: MIT Licenseと第三者条件を整備し、v13本体を変更せずNode 24 LTS、固定依存、ESLint、Node標準テストによる開発安全網を追加した。Pull Request #3でremote CI成功を確認し、HumanがGitHub公開手順に沿って検証用kintoneアプリとFormBridgeフォームを新規作成して、標準構成の実環境動作確認にも成功した。既存v13の保全を優先する方針と一致。
+- 調整が必要な点: Pull Request #3の最終差分レビューとmerge可否のHuman判断。
 
 ## 未決事項
 
-- 実FormBridge環境でHumanが確認できるテストフォームと確認手順。
 - 次期バージョンをv14とするか、Semantic Versioningへ移行するか。
 - OpenStreetMap標準タイルの現行v13 URLを、最新のTile Usage Policy指定URLへ互換性を保って変更するか。
 
