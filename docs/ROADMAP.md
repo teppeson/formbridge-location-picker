@@ -25,13 +25,13 @@
 
 | No. | 日付 | 作業 | 完了条件 | 状態 |
 | --- | --- | --- | --- | --- |
-| 1.1 | 8/3 | PJルートのOwner・ACL・書き込み確認 | 所有者、ACL継承、書き込み確認PASS | done |
-| 1.2 | 8/3 | 次番号と配置決定 | PJ033、A_cloud、activeを確定 | done |
+| 1.1 | 8/3 | 作業環境の権限・書き込み確認 | 安全な読み書きが可能であることを確認 | done |
+| 1.2 | 8/3 | プロジェクト識別・配置決定 | PJ033、activeを確定 | done |
 | 1.3 | 8/3 | 既存リポジトリclone | 履歴付きclone、origin/main一致 | done |
-| 1.4 | 8/3 | Git安全確認 | safe.directory、branch、status、remote確認 | done |
+| 1.4 | 8/3 | Git安全確認 | branch、status、remoteと作業ツリーの健全性を確認 | done |
 | 1.5 | 8/3 | v13基準固定 | commit、tag、SHA-256、現行導入方法を記録 | done |
 | 1.6 | 8/3 | PJ必須文書作成 | bootstrap必須文書と作業ログが揃う | done |
-| 1.7 | 8/3 | ガバナンス登録 | registryとHANDOFFへ反映 | done |
+| 1.7 | 8/3 | 管理情報登録 | 管理台帳と引継ぎ情報へ反映 | done |
 | 1.8 | 8/3 | 初期検証 | bootstrap、Git、UTF-8検査がPASS | done |
 | 1.9 | 8/3 | ライセンス方針確認 | MIT等の比較をHumanが理解し採否決定 | done |
 | 1.10 | 8/3 | セッション移行準備 | 新セッション手順と自己診断がPASS | done |

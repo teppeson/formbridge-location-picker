@@ -4,7 +4,7 @@
 *.cmd text eol=crlf
 *.csv text eol=crlf
 
-# Existing public v13 artifact. Keep byte-level line-ending compatibility.
+# Normalize the Windows working tree copy to CRLF; repository blobs remain LF.
 formbridge-location-picker.js text eol=crlf
 
 # CP932 / Shift_JIS files must be explicit path-level exceptions.

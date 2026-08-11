@@ -42,8 +42,12 @@
 
 ## rollback
 
-- 公開済みv13の基準タグは`v13`、commitは`b6cfe8b`、本体SHA-256は
-  `167A1B532E127B2763553D924DCA93B68AC0972B6CA9223CF341D1E1AA3DB5A9`。
+- 公開済みv13の基準タグは`v13`、commitは`b6cfe8b`。GitHub rawで再取得する
+  本体JavaScript（リポジトリblob、LF）のSHA-256は
+  `F2CB225675BD631D4529C736EDD7FD0F2E58B30A45C994E38F267F86CF84C25B`。
+- Windows作業ツリーのCRLF版SHA-256
+  `167A1B532E127B2763553D924DCA93B68AC0972B6CA9223CF341D1E1AA3DB5A9`
+  はローカルチェックアウト確認用の参考値であり、公開後の再取得検証には使用しない。
 - 未mergeの問題はPull Requestをmergeせず修正する。
 - merge後の問題は、Human承認のうえrevert commitまたは修正版を通常のPull Requestで作成する。
 - 公開Releaseの問題は、影響、復旧版、既存v13への戻し方を利用者へ案内する。

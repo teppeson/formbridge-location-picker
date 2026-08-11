@@ -12,6 +12,6 @@ end_of_line = crlf
 [*.csv]
 end_of_line = crlf
 
-# Existing public v13 artifact. Keep byte-level line-ending compatibility.
+# Keep the Windows working tree copy consistent; repository blobs remain LF.
 [formbridge-location-picker.js]
 end_of_line = crlf

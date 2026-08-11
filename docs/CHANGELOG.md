@@ -17,6 +17,9 @@
 
 ### Changed
 
+- 公開配布の基準となるリポジトリblob（LF）とWindows作業ツリー（CRLF）のSHA-256を区別し、Release・rollback検証の基準を修正。
+- GitHub Actionsへ文字コード・改行検査を追加。
+- 公開ROADMAPの内部運用語彙を外部利用者にも分かる中立表現へ変更。
 - READMEへ互換性優先とCodex主導・Human公開承認の保守方針を追記。
 - READMEへMIT License、無保証、第三者条件の案内を追記。
 - READMEへNode開発環境とWindows/macOS/Linuxのlint実行手順を追記。

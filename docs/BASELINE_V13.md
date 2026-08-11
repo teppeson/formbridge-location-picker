@@ -10,10 +10,17 @@
 - v13タグ: `b6cfe8b`
 - v13本体を導入したコミット: `ca74ab5`
 - clone時の追跡ファイル数: 2
-- `README.md` SHA-256: `B9FBB6F3E1FD8F432C9F5B731CD21B571BF6518ACD2755C9559EB4CE059F6976`
-- `formbridge-location-picker.js` SHA-256: `167A1B532E127B2763553D924DCA93B68AC0972B6CA9223CF341D1E1AA3DB5A9`
+- clone時`README.md`のリポジトリblob／GitHub raw（LF）SHA-256:
+  `2FA96E96DE4CE7214A5979DEF10C0C834BA1BF4D0DB9E3BBE92D65B452D880C1`
+- clone時`README.md`のWindows作業ツリー（CRLF）SHA-256:
+  `B9FBB6F3E1FD8F432C9F5B731CD21B571BF6518ACD2755C9559EB4CE059F6976`
+- `formbridge-location-picker.js`のリポジトリblob／GitHub raw（LF）SHA-256:
+  `F2CB225675BD631D4529C736EDD7FD0F2E58B30A45C994E38F267F86CF84C25B`
+- `formbridge-location-picker.js`のWindows作業ツリー（CRLF）SHA-256:
+  `167A1B532E127B2763553D924DCA93B68AC0972B6CA9223CF341D1E1AA3DB5A9`
 - v13タグからclone時mainまでの本体JavaScript差分: なし。READMEのみ更新。
-- 本体JavaScriptの改行は既存配布物と同じCRLFを維持し、`.editorconfig`、`.gitattributes`、文字コード検査でパス単位の明示的例外とする。
+- GitHub raw、Git archive、Release検証ではリポジトリblobのLF版を公開バイト列の基準とする。
+- Windows作業ツリーでは本体JavaScriptをCRLFへ統一し、`.editorconfig`、`.gitattributes`、文字コード検査でパス単位の明示的例外とする。改行差だけで本体挙動は変わらない。
 
 ## 現行の導入条件
 
