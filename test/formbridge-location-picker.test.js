@@ -151,7 +151,7 @@ test("form.show uses current location and preserves the v13 map contract", () =>
 
   assert.deepEqual(Array.from(harness.calls.maps[0].coordinates), [34.690083, 135.195511]);
   assert.equal(harness.calls.maps[0].zoom, 17);
-  assert.equal(harness.calls.tileLayers[0].url, "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png");
+  assert.equal(harness.calls.tileLayers[0].url, "https://tile.openstreetmap.org/{z}/{x}/{y}.png");
   assert.equal(harness.calls.tileLayers[0].options.maxZoom, 19);
   assert.match(harness.calls.tileLayers[0].options.attribution, /OpenStreetMap contributors/);
   assert.deepEqual(harness.calls.fieldValues, [
