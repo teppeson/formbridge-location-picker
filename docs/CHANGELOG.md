@@ -9,7 +9,7 @@
 - 開発ワークフロー、Git運用、レビュー手順などの開発プロセスの変更。
 - 開発中の作業経過や試行錯誤。
 
-開発ワークフローは`docs/RELEASE_PROCESS.md`、今後の計画と未決事項は
+開発ワークフローは`docs/RELEASE_PROCESS.md`、今後の計画は
 `docs/ROADMAP.md`を参照してください。
 
 ## Unreleased
