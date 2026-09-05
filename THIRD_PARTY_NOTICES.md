@@ -1,8 +1,8 @@
 # Third-Party Notices
 
-PJ033自身のソースコードと文書には、ルートの`LICENSE`に記載したMIT Licenseを適用します。
+このプロジェクト自身のソースコードと文書には、ルートの`LICENSE`に記載したMIT Licenseを適用します。
 以下の外部ライブラリ、地図データ、タイル配信サービスには、それぞれの権利者が定める
-ライセンスおよび利用条件が別途適用され、PJ033のMIT Licenseの対象には含まれません。
+ライセンスおよび利用条件が別途適用され、本プロジェクトのMIT Licenseの対象には含まれません。
 
 ## Leaflet 1.9.4
 
@@ -12,7 +12,7 @@ PJ033自身のソースコードと文書には、ルートの`LICENSE`に記載
 - Copyright (c) 2010-2011, CloudMade
 - ライセンス原文: <https://github.com/Leaflet/Leaflet/blob/v1.9.4/LICENSE>
 
-現時点でPJ033はLeaflet本体をリポジトリへ同梱していません。将来同梱する場合は、
+現時点で本プロジェクトはLeaflet本体をリポジトリへ同梱していません。将来同梱する場合は、
 BSD 2-Clause Licenseの著作権表示、条件および免責条項を配布物へ収録します。
 
 ## OpenStreetMap

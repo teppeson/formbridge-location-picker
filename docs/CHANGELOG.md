@@ -24,7 +24,7 @@
 - ESLint 10のflat configと再現可能なlintコマンド。
 - Node標準テストによるv13主要挙動の特性テスト3件。
 - Node 24でlintとtestを実行するGitHub Actions workflow。
-- Contribution手順、実FormBridgeスモークテスト確認表、開発・Release・rollback手順。
+- Contribution手順と、開発・Release・rollback手順。
 
 ### Changed
 
@@ -37,4 +37,4 @@
 ### Functional impact
 
 - 配布JavaScriptの機能変更なし。
-- 2026-08-09にGitHub公開手順どおりの新規kintoneアプリとFormBridgeフォームで、v13標準構成の実環境動作確認に成功。
+- 実FormBridge環境で、READMEの設定方法どおりに構成したv13標準構成の動作を確認済み。

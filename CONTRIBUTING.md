@@ -47,7 +47,7 @@ mergeはsquash mergeで行うため、レビュー往復の中間commitはmain�
 - `latitude`と`longitude`の既定フィールドコードを維持している。
 - Leaflet、OpenStreetMap、国土地理院の帰属表示と利用条件を維持している。
 - 認証情報、顧客データ、非公開FormBridge設定を含めていない。
-- 実FormBridge確認が必要な変更では、`docs/FORMBRIDGE_SMOKE_TEST.md`の結果を記録した。
+- 機能または実行環境へ影響する変更では、必要な実環境確認を行い、その結果をPull Requestへ記載した。
 
 ## ライセンス
 

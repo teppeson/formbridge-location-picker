@@ -48,16 +48,15 @@
 
 - 既存利用者との後方互換性を最優先にします。
 - 現行v13の既定動作を変更する場合は、事前に互換性評価と移行方法を提示します。
-- Codexが調査、実装、テスト、Pull Requestの準備を主導し、公開・マージ・ReleaseはHumanが承認します。
-- 現在は開発基盤の移行期間です。v13本体の挙動変更はまだ行っていません。
-- 2026年8月9日、公開手順どおりに新規作成したkintoneアプリとFormBridgeフォームで、v13標準構成の動作を確認しました。
+- 変更は自動テストとCIで検証し、機能または実行環境へ影響する変更では
+  実FormBridge環境での動作確認も行います。
 
-開発計画と現在地は [docs/ROADMAP.md](docs/ROADMAP.md)、現行仕様の基準は
+開発計画は [docs/ROADMAP.md](docs/ROADMAP.md)、現行仕様の基準は
 [docs/BASELINE_V13.md](docs/BASELINE_V13.md) を参照してください。
 
 ## ライセンス
 
-PJ033自身のソースコードと文書は、Teppei Utsunomiyaを著作権者とする
+このプロジェクトのソースコードと文書は、Teppei Utsunomiyaを著作権者とする
 [MIT License](LICENSE)で公開します。利用、変更、再配布、商用利用が可能ですが、
 ソフトウェアは現状有姿かつ無保証で提供されます。正確な許諾条件と免責事項は
 `LICENSE`の原文を参照してください。
@@ -83,6 +82,5 @@ PowerShellで`npm.ps1`が実行ポリシーにより拒否される環境では�
 `npm.cmd`を使用してください。macOSやLinuxでは`npm ci`、`npm run lint`、`npm test`を
 使用できます。`check`はlintとテストを順番に実行します。
 
-改善提案とPull Requestの手順は[CONTRIBUTING.md](CONTRIBUTING.md)、公開前の実環境確認は
-[実FormBridgeスモークテスト確認表](docs/FORMBRIDGE_SMOKE_TEST.md)、公開・rollback手順は
-[開発・Release手順](docs/RELEASE_PROCESS.md)を参照してください。
+改善提案とPull Requestの手順は[CONTRIBUTING.md](CONTRIBUTING.md)、開発・Release・rollback
+手順は[開発・Release手順](docs/RELEASE_PROCESS.md)を参照してください。
