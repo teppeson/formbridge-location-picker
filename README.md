@@ -1,4 +1,4 @@
-# formbridge-location-picker（v13）
+# formbridge-location-picker
 
 フォームブリッジ上にJavaScriptとCSSによるカスタマイズを行うことで、  
 フォームに地図を表示し、マーカー（移動可能）の位置情報（緯度・経度）を取得する機能です。
