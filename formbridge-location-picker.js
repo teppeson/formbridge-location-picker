@@ -9,7 +9,7 @@
     var mapHeight = '400px';      // 地図の高さ
     var mapWidth = '100%';        // 地図の横幅
     var tileLayerURL = useOpenStreetMap
-      ? 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'    // OpenStreetMapのタイルレイヤー
+      ? 'https://tile.openstreetmap.org/{z}/{x}/{y}.png'        // OpenStreetMapのタイルレイヤー
       : 'https://cyberjapandata.gsi.go.jp/xyz/std/{z}/{x}/{y}.png'; // 国土地理院のタイルレイヤー
     var maxZoomLevel = 19;        // 最大ズームレベル
     var attribution = useOpenStreetMap

@@ -50,6 +50,16 @@
 - 上記挙動を変える場合は、変更理由、既存利用者への影響、移行方法、rollback方法をPull Requestへ記載する。
 - デフォルト値を変更する機能追加は破壊的変更候補として扱い、互換性への影響と移行方法を明示する。
 
+## 本ベースライン以降の意図的変更
+
+本書はv13公開時点の記録であり、以後の意図的な変更は取り消さずここへ追記する。
+
+- 2026-09-05: OpenStreetMap標準タイルURLを
+  `https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png` から、Tile Usage Policy指定の
+  `https://tile.openstreetmap.org/{z}/{x}/{y}.png` へ変更した。上記「保護対象の現行挙動」の
+  6は「既定地図はOpenStreetMap、最大ズーム19」を維持し、タイル取得先ホスト名のみが変わる。
+  特性テストの期待値も同じURLへ更新した。
+
 ## 自動テストによる保護範囲
 
 `test/formbridge-location-picker.test.js`はNode標準テストと最小スタブを使い、次を保護する。

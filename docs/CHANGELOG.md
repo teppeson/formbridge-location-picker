@@ -33,8 +33,15 @@
 - READMEへMIT License、無保証、第三者条件の案内を追記。
 - READMEへNode開発環境とWindows/macOS/Linuxのlint実行手順を追記。
 - READMEへtestとlint・test一括確認コマンドを追記。
+- OpenStreetMap標準タイルのURLを、Tile Usage Policyが指定する
+  `https://tile.openstreetmap.org/{z}/{x}/{y}.png` へ変更。v13の
+  `https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png` は、同ポリシーが予告なく
+  廃止されうると記載しているサブドメイン形式のため使用を取りやめた。
 
 ### Functional impact
 
-- 配布JavaScriptの機能変更なし。
+- 配布JavaScriptの変更はOpenStreetMap標準タイルのURL文字列1行のみ。
+  設定インターフェース、既定座標、ズーム、フィールド更新仕様、帰属表示、
+  国土地理院への切替は変更していない。取得先ホスト名だけが変わるため、
+  既存利用者の導入手順とフィールド構成は従来のまま利用できる。
 - 実FormBridge環境で、READMEの設定方法どおりに構成したv13標準構成の動作を確認済み。
