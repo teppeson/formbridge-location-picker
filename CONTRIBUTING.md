@@ -21,7 +21,25 @@ macOSまたはLinuxでは`npm ci`と`npm run check`を使用してください�
 2. 変更前に`docs/BASELINE_V13.md`で保護対象を確認する。
 3. 機能変更には、既存挙動を保護するテストまたは変更後の仕様を示すテストを追加する。
 4. `npm run check`を成功させる。
-5. Pull Requestへ変更理由、互換性への影響、検証結果、rollback方法を記載する。
+5. push前に、作業中のcommitを論理的な変更単位へ整理する。
+6. Pull Requestへ変更理由、互換性への影響、検証結果、rollback方法を記載する。
+
+## commitとPull Requestの粒度
+
+このリポジトリのGit履歴は、開発中の作業経過ではなく、ソフトウェアとして意味のある
+変更の記録です。手元では自由にcommitして構いませんが、push前に整理してください。
+
+- 1commit = 単独でrevertでき、1文で説明できる1つの変更。
+- そのcommit時点で`npm run check`が成功する。
+- 「レビュー対応」「typo修正」など直前のcommitを完成させるだけの修正は、
+  push前にsquashして本体へまとめる。
+- 製品の変更と、無関係な文書整理を同じcommitへ混ぜない。
+- 1つの論理的変更につき1つのPull Requestを原則とします。
+
+レビュー中の指摘対応はPull Requestブランチへ追加commitしてください。force pushは不要です。
+mergeはsquash mergeで行うため、レビュー往復の中間commitはmainへ残りません。
+
+詳細は`docs/RELEASE_PROCESS.md`を参照してください。
 
 ## Pull Requestの確認事項
 
