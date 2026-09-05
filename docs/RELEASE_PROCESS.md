@@ -65,12 +65,34 @@ Pull Request本文はsquash merge後のcommit本文になります。
 2. **squash merge**でmainへ統合します。レビュー往復の中間commitはmainへ残しません。
 3. 複数の論理的変更を含んでしまったPull Requestは、squash mergeせず分割します。
 
+## バージョニング
+
+Semantic Versioningを採用し、タグは`vMAJOR.MINOR.PATCH`の形式とします。
+判定は**配布JavaScript `formbridge-location-picker.js` の互換性**を基準とします。
+
+| 区分 | 対象 |
+| --- | --- |
+| MAJOR | 既存利用者の設定変更や移行作業が必要になる変更 |
+| MINOR | 後方互換性を保った機能追加 |
+| PATCH | 後方互換性を保った修正。動作の是正、外部サービスの利用条件への適合など |
+
+既存のタグ`v13`は、Semantic Versioning移行前に公開したものです。
+そのまま維持し、移行上は`13.0.0`に相当する既存の基準として扱います。
+`v13.0.0`は新設しません。互換性の判定基準は`docs/BASELINE_V13.md`です。
+
+バージョンの正本はタグと`docs/CHANGELOG.md`です。`README.md`のタイトルへは
+バージョンを表記しません。`package.json`は開発ツール専用のため、
+配布JavaScriptのバージョンとは分離し、更新しません。
+
 ## Release
 
 1. main上でCI成功と対象commitを確認します。
 2. バージョン番号、Release名、Release notes、配布ファイルのSHA-256を確定します。
-3. タグを作成し、GitHub Releaseを発行します。
-4. 公開後に配布ファイルを再取得し、SHA-256と導入手順を確認します。
+3. `docs/CHANGELOG.md`の`## Unreleased`を、確定したバージョンと日付の見出しへ
+   切り替えます。
+4. タグを作成し、GitHub Releaseを発行します。Release notesは`docs/CHANGELOG.md`の
+   該当バージョンの内容を使用します。
+5. 公開後に配布ファイルを再取得し、SHA-256と導入手順を確認します。
 
 ## rollback
 
