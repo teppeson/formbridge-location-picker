@@ -72,8 +72,6 @@ Pull Request本文はsquash merge後のcommit本文になります。
 3. タグを作成し、GitHub Releaseを発行します。
 4. 公開後に配布ファイルを再取得し、SHA-256と導入手順を確認します。
 
-次期バージョン番号をv14とするかSemantic Versioningへ移行するかは未決です。
-
 ## rollback
 
 - 公開済みv13の基準タグは`v13`、commitは`b6cfe8b`。GitHub rawで再取得する
