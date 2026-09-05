@@ -45,4 +45,3 @@
 
 - Phase 3では、`docs/BASELINE_V13.md`の保護対象挙動を維持したうえで、
   エラー処理と設定の整理から着手する。破壊的変更を伴う提案は事前に本書へ記載する。
-- 各Pull Requestの内容と検証結果は`docs/CHANGELOG.md`に記録する。
